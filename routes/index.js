@@ -1,5 +1,6 @@
 import { Router } from 'express'
 import exercisesRoutes from './exercises.js'
+import exerciseRecRoutes from './exerciseRecs.js'
 
 const router = Router()
 
@@ -8,6 +9,6 @@ router.get('/', (req, res) => {
 })
 
 router.use('/exercises', exercisesRoutes)
-
+router.use('/exerciseRecs', exerciseRecRoutes)
 
 export default router

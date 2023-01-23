@@ -1,4 +1,5 @@
 import mongoose, { Schema } from "mongoose"
+import exerciseSchema from './exercises.js'
 
 const exerciseRecSchema = new Schema({
     type: String,
@@ -7,10 +8,7 @@ const exerciseRecSchema = new Schema({
     upperBody: Boolean,
     sets: Number,
     weight: Number,
-    userId: {
-        type: String,
-        required: true
-    }
+    exercises: exerciseSchema
 })
 
 export default mongoose.model('exerciseRec', exerciseRecSchema)
