@@ -1,4 +1,4 @@
-import User from "../models/user.js";
+import User from '../models/user.js';
 
 export const getUser = async (req, res) => {
   try {
@@ -9,7 +9,7 @@ export const getUser = async (req, res) => {
       return res.json(user);
     }
 
-    res.status(404).json({ message: "user not found!" });
+    res.status(404).json({ message: 'user not found!' });
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: error.message });
@@ -44,10 +44,10 @@ export const deleteUser = async (req, res) => {
     const deleted = await User.findByIdAndDelete(id);
 
     if (deleted) {
-      return res.status(200).send("User deleted!");
+      return res.status(200).send('User deleted!');
     }
 
-    throw new Error("user not found");
+    throw new Error('user not found');
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: error.message });

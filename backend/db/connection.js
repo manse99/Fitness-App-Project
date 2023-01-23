@@ -9,11 +9,11 @@ mongoose.connect(url).catch((err) => {
   console.log(`Error connection to mongodb: ${err.message}`)
 });
 
-mongoose.connection.on("disconnected", () => {
+mongoose.connection.on('disconnected', () => {
   console.log(`Disconnected from MongoDB!`)
 });
   
-mongoose.connection.on("error", (err) => {
+mongoose.connection.on('error', (err) => {
    console.log(`MongoDB connection error: ${err}`)
 });
   

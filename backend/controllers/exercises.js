@@ -1,4 +1,4 @@
-import Exercise from "../models/exercises.js";
+import Exercise from '../models/exercises.js';
 
 export const getExcercises = async (req, res) => {
   try {
@@ -19,7 +19,7 @@ export const getExercise = async (req, res) => {
       return res.json(exercise);
     }
 
-    res.status(404).json({ message: "Exercise not found!" });
+    res.status(404).json({ message: 'Exercise not found!' });
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: error.message });
@@ -54,10 +54,10 @@ export const deleteExercise = async (req, res) => {
     const deleted = await Exercise.findByIdAndDelete(id);
 
     if (deleted) {
-      return res.status(200).send("Exercise deleted!");
+      return res.status(200).send('Exercise deleted!');
     }
 
-    throw new Error("Exercise not found");
+    throw new Error('Exercise not found');
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: error.message });

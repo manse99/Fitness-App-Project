@@ -1,4 +1,4 @@
-import ExerciseRec from "../models/exercises.js";
+import ExerciseRec from '../models/exercises.js';
 
 export const getExcerciseRecs = async (req, res) => {
   try {
@@ -19,7 +19,7 @@ export const getExerciseRec = async (req, res) => {
       return res.json(exerciseRecs);
     }
 
-    res.status(404).json({ message: "Exercise Record not found!" });
+    res.status(404).json({ message: 'Exercise Record not found!' });
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: error.message });
@@ -54,10 +54,10 @@ export const deleteExerciseRec = async (req, res) => {
     const deleted = await ExerciseRec.findByIdAndDelete(id);
 
     if (deleted) {
-      return res.status(200).send("Exercise Record deleted!");
+      return res.status(200).send('Exercise Record deleted!');
     }
 
-    throw new Error("Exercise Record not found");
+    throw new Error('Exercise Record not found');
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: error.message });
