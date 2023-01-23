@@ -13,10 +13,10 @@ export const getExcerciseRecs = async (req, res) => {
 export const getExerciseRec = async (req, res) => {
   try {
     const { id } = req.params;
-    const exerciseRecs = await ExerciseRec.findById(id);
+    const exerciseRec = await ExerciseRec.findById(id);
 
-    if (exerciseRecs) {
-      return res.json(exerciseRecs);
+    if (exerciseRec) {
+      return res.json(exerciseRec);
     }
 
     res.status(404).json({ message: 'Exercise Record not found!' });
