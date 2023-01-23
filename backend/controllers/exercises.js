@@ -1,6 +1,6 @@
 import Exercise from '../models/exercises.js';
 
-export const getExcercises = async (req, res) => {
+export const getExercises = async (req, res) => {
   try {
     const exercises = await Exercise.find();
     res.json(exercises);
@@ -37,7 +37,7 @@ export const createExercise = async (req, res) => {
   }
 };
 
-export const updateExcercise = async (req, res) => {
+export const updateExercise = async (req, res) => {
   try {
     const { id } = req.params;
     const exercise = await Exercise.findByIdAndUpdate(id, req.body);
