@@ -1,4 +1,5 @@
 import mongoose from 'mongoose'
+import exerciseRecSchema from './exerciseRec';
 ​
 const Schema = mongoose.Schema
 ​
