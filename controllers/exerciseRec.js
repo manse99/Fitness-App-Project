@@ -1,6 +1,6 @@
 import ExerciseRec from '../models/exercises.js';
 
-export const getExcerciseRecs = async (req, res) => {
+export const getExerciseRecs = async (req, res) => {
   try {
     const exerciseRecs = await ExerciseRec.find();
     res.json(exerciseRecs);
@@ -13,10 +13,10 @@ export const getExcerciseRecs = async (req, res) => {
 export const getExerciseRec = async (req, res) => {
   try {
     const { id } = req.params;
-    const exerciseRec = await ExerciseRec.findById(id);
+    const exerciseRecs = await ExerciseRec.findById(id);
 
-    if (exerciseRec) {
-      return res.json(exerciseRec);
+    if (exerciseRecs) {
+      return res.json(exerciseRecs);
     }
 
     res.status(404).json({ message: 'Exercise Record not found!' });
@@ -37,7 +37,7 @@ export const createExerciseRec = async (req, res) => {
   }
 };
 
-export const updateExcerciseRec = async (req, res) => {
+export const updateExerciseRec = async (req, res) => {
   try {
     const { id } = req.params;
     const exerciseRec = await ExerciseRec.findByIdAndUpdate(id, req.body);
