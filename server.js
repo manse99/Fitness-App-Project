@@ -1,8 +1,8 @@
 import express from 'express'
 import cors from 'cors'
 import morgan from 'morgan'
-import routes from './routes/index.js'
-import database from "./db/connection.js"
+import routes from './backend/routes/index.js'
+import database from "./backend/db/connection.js"
 
 let app = express()
 let port = process.env.PORT || 4250
