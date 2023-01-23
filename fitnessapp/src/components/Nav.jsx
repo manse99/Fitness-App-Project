@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 function Nav() {
   return (
       <nav>
+        <Link to='/' activeStyle>
+            Home
+          </Link>
           <Link to='./Pages/about' activeStyle>
             About
           </Link>
