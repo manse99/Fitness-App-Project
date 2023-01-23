@@ -1,5 +1,5 @@
 import mongoose from 'mongoose'
-​
+
 const Schema = mongoose.Schema
 
 const exercisesSchema = new Schema({
@@ -13,4 +13,4 @@ const exercisesSchema = new Schema({
   }
 })
 
-export default mongoose.model('excercises', exercisesSchema);
+export default mongoose.model('exercises', exercisesSchema);
