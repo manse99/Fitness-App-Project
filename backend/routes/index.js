@@ -9,6 +9,6 @@ router.get('/', (req, res) => {
 })
 
 router.use('/exercises', exercisesRoutes)
-router.use('/exerciseRecs', exerciseRecRoutes)
+router.use('/exerciserecs', exerciseRecRoutes)
 
 export default router
