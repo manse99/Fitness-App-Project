@@ -1,18 +1,14 @@
 
 
 import React from 'react';
+import { useState, useEffect } from 'react'
+import { getExercises } from '../services/exercises.js'
+import ExerciseModal from '../components/ExerciseModal.jsx'
 
 const About = () => {
   return (
-    <div
-      style={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: '90vh'
-      }}
-    >
-      <p>About</p>
+    <div className='about'>
+      <ExerciseModal />
     </div>
   );
 };
