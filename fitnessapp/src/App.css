@@ -7,3 +7,17 @@
   height: 100vh;
   background-image: url('https://th.bing.com/th/id/R.5f0f25db7062151c57c1d514213bcc14?rik=Zh7jAHDGmEGZow&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fwp1873140.jpg&ehk=9Knzy9w4URSvrf6bow%2bRLSUOCZd0vdV3swUL2N74sIo%3d&risl=&pid=ImgRaw&r=0');
 }
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 20px;
+  height: 50px;
+  align-items: center;
+  padding-right: 25px;
+  background-color: orange;
+  border: 3px rgb(140, 91, 0) solid;
+}
+
+.link {
+  font-size: 25px
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import ExerciseList from '../components/ExerciseList.jsx';
 
 const Login = () => {
   return (
@@ -10,7 +11,7 @@ const Login = () => {
         height: '90vh'
       }}
     >
-      <h1>Login</h1>
+      <ExerciseList />
     </div>
   );
 };
