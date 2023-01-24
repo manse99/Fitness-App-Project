@@ -2,7 +2,8 @@ import api from "./apiConfig.js";
 
 export const getExercises = async () => {
     try {
-        const repsonse = await api.get('/exercises')
+        const response = await api.get('/exercises')
+        return response.data
     } catch (error) {
         throw error
     }
