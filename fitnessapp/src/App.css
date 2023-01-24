@@ -18,6 +18,9 @@
   background-color: orange;
   border: 3px rgb(140, 91, 0) solid;
 }
+h1 {
+  margin: 0;
+}
 
 .link {
   font-size: 25px;
