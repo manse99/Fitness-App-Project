@@ -10,6 +10,12 @@ const exercisesSchema = new Schema({
   upperBody: {
       type: Boolean,
       required: true
+  },
+  link: {
+    type: String
+  },
+  imgUrl: {
+    type: String
   }
 })
 
