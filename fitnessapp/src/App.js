@@ -3,7 +3,7 @@ import Nav from './components/Nav.jsx';
 import { BrowserRouter as Router} from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom';
 import About from './Pages/About.jsx';
-import Login from './Pages/Login.jsx';
+import CreateExerciseRec from './Pages/CreateExerciseRec.jsx';
 import Home from './screens/Home.jsx';
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
     <Routes>
       <Route path='/' element={<Home/>} />
       <Route path='/Pages/About' element={<About/>} />
-      <Route path='/Pages/Login' element={<Login/>} />
+      <Route path='/Pages/Add-Exercise-Record' element={<CreateExerciseRec/>} />
     </Routes>
    </Router>
   );
