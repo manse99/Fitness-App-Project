@@ -5,6 +5,7 @@
 
 .home {
   height: 100vh;
+  text-align: center;
   background-image: url('https://th.bing.com/th/id/R.5f0f25db7062151c57c1d514213bcc14?rik=Zh7jAHDGmEGZow&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fwp1873140.jpg&ehk=9Knzy9w4URSvrf6bow%2bRLSUOCZd0vdV3swUL2N74sIo%3d&risl=&pid=ImgRaw&r=0');
 }
 .nav {
@@ -17,7 +18,67 @@
   background-color: orange;
   border: 3px rgb(140, 91, 0) solid;
 }
+.first {
+  margin: 0;
+}
 
 .link {
-  font-size: 25px
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.about {
+  background-color: #ffbe4d;
+  height: 100vh;
+  display: grid;
+  padding-top: 50px;
+  padding: 50px 0 20px 20px;
+}
+
+.exercise {
+  height: 10vh;
+}
+
+.exerciseModal {
+  background-color: rgb(210, 138, 23);
+  width: 80vw;
+  height: 50vw;
+  z-index: 999;
+  position: absolute;
+  left: 10vw;
+  border: 5px rgba(0, 0, 0, 0.388) solid;
+  box-shadow: 7px 7px 2px 0.5px;
+}
+
+.hideElement {
+  display: none;
+}
+
+.picture {
+  height: 40vh;
+  border-radius: 60%;
+  border: 5px solid;
+}
+
+.aboutImg {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+}
+.aboutImg:hover {
+  scale: 1.05;
+  cursor: pointer;
+}
+
+.exerciseList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 50px;
+}
+.closeExerciseModal {
+  color: white;
+  text-align: end;
+  margin-right: 10px;
+  margin-top: 5px;
+  cursor: pointer;
 }
