@@ -31,7 +31,6 @@
   background-color: #ffbe4d;
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
   padding-top: 50px;
   padding: 50px 0 20px 20px;
 }
@@ -43,17 +42,43 @@
 .exerciseModal {
   background-color: rgb(210, 138, 23);
   width: 80vw;
-  height: 60vw;
+  height: 50vw;
   z-index: 999;
   position: absolute;
   left: 10vw;
-  top: 20vh;
   border: 5px rgba(0, 0, 0, 0.388) solid;
   box-shadow: 7px 7px 2px 0.5px;
+}
+
+.hideElement {
+  display: none;
 }
 
 .picture {
   height: 40vh;
   border-radius: 60%;
   border: 5px solid;
+}
+
+.aboutImg {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+}
+.aboutImg:hover {
+  scale: 1.05;
+  cursor: pointer;
+}
+
+.exerciseList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 50px;
+}
+.closeExerciseModal {
+  color: white;
+  text-align: end;
+  margin-right: 10px;
+  margin-top: 5px;
+  cursor: pointer;
 }
