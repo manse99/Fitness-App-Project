@@ -1,5 +1,5 @@
-import { useState } from "react";
-import {createExerciseRec} from "../services/records.js"
+import { useState, useEffect } from "react";
+import {createExerciseRec, getExercisesRecs, deleteProductRec, updateExerciseRec } from "../services/records.js"
 import {useNavigate} from "react-router-dom";
 
 export default function CreateExerciseRec() {
@@ -11,8 +11,25 @@ export default function CreateExerciseRec() {
     sets: "",
     weight: "",
   });
+  const [exerciseRecs, setExerciseRecs] = useState([])
+  const [refreshPage, setRefreshPage] = useState(0)
 
-  let navigate = useNavigate()
+  useEffect(() => {
+    getExercisesRecs()
+    .then(res => {
+      setExerciseRecs(res)
+      console.log(exerciseRecs)
+    })
+  }, [refreshPage])
+  
+  function handleEdit(exerciseRec) {
+
+  }
+
+  async function handleDelete(exerciseRec) {
+    await deleteProductRec(exerciseRec._id)
+    setRefreshPage(prev => (prev + 1))
+  }
 
   function handleChange(e) {
     const { name, value, type } = e.target;
@@ -43,8 +60,9 @@ export default function CreateExerciseRec() {
  async  function handleSubmit(e) {
     e.preventDefault();
     await createExerciseRec(form)
-    navigate("/", {replace: true})
+    setRefreshPage(prev => (prev + 1))
   }
+
 
   return (
     <div>
@@ -106,6 +124,19 @@ export default function CreateExerciseRec() {
         />
         <button type="submit">Add</button>
       </form>
+      <div className="exerciseRecList">
+        {exerciseRecs.map(exerciseRec => (
+        <div className="exerciseRecs">
+          <p>type: {exerciseRec.type}</p>
+          <p>duration: {exerciseRec.duration}</p>
+          <p>intensity: {exerciseRec.intensity}</p>
+          <p>upper/lower: {exerciseRec.upperBody? 'upper' : 'lower'}</p>
+          <p>weight: {exerciseRec.weight}</p>
+          <p>sets: {exerciseRec.sets}</p>
+          <button onClick={() => handleDelete(exerciseRec)}>delete</button>
+          <button onClick={() => handleEdit(exerciseRec)}>edit</button>
+        </div>))}
+      </div>
     </div>
   );
 }
