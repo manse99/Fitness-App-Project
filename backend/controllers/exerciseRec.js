@@ -1,4 +1,4 @@
-import ExerciseRec from '../models/exercises.js';
+import ExerciseRec from '../models/exerciseRec.js';
 
 export const getExerciseRecs = async (req, res) => {
   try {

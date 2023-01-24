@@ -1,26 +1,16 @@
+
+
 import mongoose from 'mongoose'
-​
+
 const Schema = mongoose.Schema
-​
+
 const exerciseRecSchema = new Schema({
-    type: {
-        type: String,
-    },
-    duration: {
-        type: Number
-    },
-    intensity: {
-        type: Number
-    },
-    upperBody: {
-        type: Boolean
-    },
-    sets: {
-        type: Number
-    },
-    weight: {
-        type: Number
-    }
+    type: String,
+    duration: Number,
+    intensity: Number,
+    upperBody: Boolean,
+    sets: Number,
+    weight: Number
 })
 
-export default mongoose.model('excerciseRec', exerciseRecSchema)
+export default mongoose.model('exerciseRec', exerciseRecSchema)
