@@ -7,7 +7,6 @@ function ExerciseModal(prop) {
             <iframe width="300" height="215"
                 src={prop.exercise.link}>
             </iframe>   
-            
             <div>Upper/Lower: {prop.exercise.upperBody? "upper" : 'lower'}</div>
         </div>
     )

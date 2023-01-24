@@ -82,3 +82,9 @@
   margin-top: 5px;
   cursor: pointer;
 }
+
+.exerciseRecs {
+  background-color: rgb(222, 255, 179);
+  border: 3px solid green;
+  margin: 50px
+}
