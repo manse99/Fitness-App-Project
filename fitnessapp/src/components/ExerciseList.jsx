@@ -8,7 +8,10 @@ function ExerciseList(prop) {
     return(
         <div className='exerciseList'>
             {prop.exercises.map((exercise) => (<div>
-                <img className="aboutImg" onClick={() => prop.setDisplayModal(true)} src={exercise.imgUrl}></img>
+                <img className="aboutImg" onClick={() => {
+                    prop.setDisplayModal(true)
+                    prop.setExercise(exercise)
+                    }} src={exercise.imgUrl}></img>
             </div>))}
         </div>
     )

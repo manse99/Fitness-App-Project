@@ -2,10 +2,13 @@ function ExerciseModal(prop) {
     return(
         <div className={prop.displayModal? "exerciseModal" : 'hideElement'}>
             <div className="closeExerciseModal" onClick={() => prop.setDisplayModal(false)}>X</div>
-            <img src="" alt='img not found'></img>
-            <div>Video Link</div>
-            <div>Exercise Name</div>
-            <div>Upper/Lower:</div>
+            <div>{prop.exercise.name}</div>
+
+            <iframe width="300" height="215"
+                src={prop.exercise.link}>
+            </iframe>   
+            
+            <div>Upper/Lower: {prop.exercise.upperBody? "upper" : 'lower'}</div>
         </div>
     )
 }
