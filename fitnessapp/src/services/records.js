@@ -36,7 +36,7 @@ export const updateExerciseRec = async (id, exercise) => {
     }
 }
 
-export const deleteProductRec = async id => {
+export const deleteExerciseRec = async id => {
     try {
         const response = await api.delete(`/exerciserecs/${id}`)
         return response.data

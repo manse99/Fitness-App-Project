@@ -36,7 +36,7 @@ export const updateExercise = async (id, exercise) => {
     }
 }
 
-export const deleteProduct = async id => {
+export const deleteExercise = async id => {
     try {
         const response = await api.delete(`/exercises/${id}`)
         return response.data
