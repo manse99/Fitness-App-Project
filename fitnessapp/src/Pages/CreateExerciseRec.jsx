@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import {createExerciseRec, getExercisesRecs, deleteExerciseRec, updateExerciseRec } from "../services/records.js"
 import {useNavigate} from "react-router-dom";
+import EditModal from "../components/EditModal.jsx";
 
 export default function CreateExerciseRec() {
   const [form, setForm] = useState({
@@ -13,6 +14,7 @@ export default function CreateExerciseRec() {
   });
   const [exerciseRecs, setExerciseRecs] = useState([])
   const [refreshPage, setRefreshPage] = useState(0)
+  const [displayEditModal, setEditDisplayModal] = useState(false)
 
   useEffect(() => {
     getExercisesRecs()
@@ -66,6 +68,7 @@ export default function CreateExerciseRec() {
 
   return (
     <div>
+      <EditModal />
       <h1>Add Exercise</h1>
       <form onSubmit={handleSubmit}>
         <input
@@ -89,7 +92,7 @@ export default function CreateExerciseRec() {
           value={form.intensity}
           onChange={handleChange}
           />
-          <div>
+        <div>
           <h3>Upper Body</h3>
         <input
           id="upperBody-true"

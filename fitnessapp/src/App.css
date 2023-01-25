@@ -89,3 +89,19 @@
   border: 3px solid green;
   margin: 50px
 }
+
+.editModal {
+  background-color: rgba(0, 202, 84, 0.95);
+  width: 80vw;
+  height: 50vw;
+  z-index: 999;
+  position: absolute;
+  left: 10vw;
+  border: 5px rgba(0, 0, 0, 0.388) solid;
+  box-shadow: 7px 7px 2px 0.5px;
+}
+
+.closeEditModal {
+  text-align: end;
+  color: white;
+}
