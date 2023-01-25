@@ -11,8 +11,11 @@ function EditModal(prop) {
         weight: ""
     }) 
 
-    async function handleSubmit() {
+    async function handleSubmit(e) {
+        e.preventDefault()
+        prop.setDisplayEditModal(false)
         await updateExerciseRec(prop.recId, editExercise)
+        prop.setRefreshPage(prev => prev + 1)
     }
 
     function handleChange(e) {
