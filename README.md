@@ -19,6 +19,8 @@ Project Overiview- https://docs.google.com/document/d/1kmjBF7HNCl62LEr9aCRfuobMV
 
 
 * Netlify- (Front End Deployment)
+https://63d1690835b037073d872e7f--remarkable-pothos-09e89f.netlify.app/
+
 
 * Backend Repo- https://github.com/individual-ism/fitness_backend
 
