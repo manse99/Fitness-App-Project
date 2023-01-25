@@ -12,7 +12,7 @@ Project Overiview- https://docs.google.com/document/d/1kmjBF7HNCl62LEr9aCRfuobMV
 ---
 * Heroku- (Back End Deployment)
 1. Access to root API- https://fitness-app-1114.herokuapp.com/
-2. Access to a list of exercises- https://-Access to fitness-app-1114.herokuapp.com/exercises
+2. Access to a list of exercises- https://fitness-app-1114.herokuapp.com/exercises
 3. Access to a single exercise- https://fitness-app-1114.herokuapp.com/exercises/:id
 4. Access to workout records- https://fitness-app-1114.herokuapp.com/exerciserecs
 5. Access to a single workout record- https://fitness-app-1114.herokuapp.com/exerciserecs/:id
