@@ -9,12 +9,10 @@
   background-image: url('https://th.bing.com/th/id/R.5f0f25db7062151c57c1d514213bcc14?rik=Zh7jAHDGmEGZow&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fwp1873140.jpg&ehk=9Knzy9w4URSvrf6bow%2bRLSUOCZd0vdV3swUL2N74sIo%3d&risl=&pid=ImgRaw&r=0');
 }
 .nav {
-  display: flex;
-  justify-content: flex-end;
-  column-gap: 20px;
+  display: grid;
+  grid-template-columns: 85px 85px 1fr 250px;
   height: 50px;
   align-items: center;
-  padding-right: 25px;
   background-color: orange;
   border: 3px rgb(140, 91, 0) solid;
 }
@@ -23,16 +21,26 @@
 }
 
 .link {
-  font-size: 25px;
+  font-size: 20px;
   text-decoration: none;
+  padding: 13px 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  text-align: center;
 }
-
+.link:hover {
+  background-color: rgb(255, 215, 82);
+  /* height: 50px; */
+}
+.link:active {
+  color: rgb(197, 0, 197)
+}
 .about {
   background-color: #ffbe4d;
   height: 100vh;
   display: grid;
   padding-top: 50px;
-  padding: 50px 0 20px 20px;
+  padding: 50px 0px;
   overflow: scroll;
 }
 
@@ -64,7 +72,9 @@
 .aboutImg {
   width: 200px;
   height: 200px;
-  padding: 20px;
+  border: 3px solid rgb(107, 96, 0);
+  border-radius: 5%;
+  box-shadow: 3px 3px 5px .2px rgb(107, 107, 107);
 }
 .aboutImg:hover {
   scale: 1.05;
@@ -75,13 +85,16 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 50px;
+  width: 80vw;
+  margin: 0 auto
 }
-.closeExerciseModal {
-  color: white;
-  text-align: end;
-  margin-right: 10px;
-  margin-top: 5px;
+.closeExerciseModal, .closeEditModal {
+  color: rgb(255, 255, 255);
   cursor: pointer;
+  position: relative;
+  margin-right: 10px;
+  height: 25px;
+  width: 25px;
 }
 
 .exerciseRecs {
@@ -100,8 +113,58 @@
   border: 5px rgba(0, 0, 0, 0.388) solid;
   box-shadow: 7px 7px 2px 0.5px;
 }
-
-.closeEditModal {
-  text-align: end;
-  color: white;
+.title {
+  text-align: center;
+  font-size: 30px;
+  margin: 0 auto;
+  color: #694200;
+  font-weight: 700;
 }
+
+.modalTitle {
+  text-align: center;
+  font-size: 25px;
+  margin: 0 auto;
+  color: #533500;
+  font-weight: 700;
+}
+.aboutInfo {
+  margin-top: 0;
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.imgContainer {
+  margin: auto auto;
+  width: 200px;
+}
+.closeBtnContainer {
+  display: grid;
+  grid-template-columns: 1fr 30px;
+}
+
+.exerciseVid {
+  width: 720px;
+  height: 500px;
+}
+
+.videoContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+@media screen and (max-width: 1200px) {
+  .exerciseVid {
+    width: 420px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .exerciseVid {
+    width: 300px;
+    height: 200px;
+  }
+}
+

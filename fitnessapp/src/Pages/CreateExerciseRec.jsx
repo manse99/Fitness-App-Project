@@ -14,18 +14,19 @@ export default function CreateExerciseRec() {
   });
   const [exerciseRecs, setExerciseRecs] = useState([])
   const [refreshPage, setRefreshPage] = useState(0)
-  const [displayEditModal, setEditDisplayModal] = useState(false)
+  const [displayEditModal, setDisplayEditModal] = useState(false)
+  const [recId, setRecId] = useState('')
 
   useEffect(() => {
     getExercisesRecs()
     .then(res => {
       setExerciseRecs(res)
-      console.log(exerciseRecs)
     })
   }, [refreshPage])
   
   function handleEdit(exerciseRec) {
-
+    setDisplayEditModal(true)
+    setRecId(exerciseRec._id)
   }
 
   async function handleDelete(exerciseRec) {
@@ -68,7 +69,7 @@ export default function CreateExerciseRec() {
 
   return (
     <div>
-      <EditModal />
+      <EditModal setRefreshPage={setRefreshPage} recId={recId} displayEditModal={displayEditModal} setDisplayEditModal={setDisplayEditModal} />
       <h1>Add Exercise</h1>
       <form onSubmit={handleSubmit}>
         <input
