@@ -45,7 +45,11 @@ function EditModal(prop) {
 
     return(
         <div className={prop.displayEditModal? 'editModal' : 'hideElement'}>
-            <div className="closeEditModal" onClick={() => prop.setDisplayEditModal(false)}>X</div>
+            <div  className='closeBtnContainer'>
+            <svg height='25' width='25' className="closeEditModal" onClick={() => prop.setDisplayEditModal(false)}>
+              <line x1='0' y1='12' x2='25' y2='12' stroke='rgb(0, 100, 0)' stroke-width='3' />
+            </svg>
+            </div>
             <form onSubmit={handleSubmit}>                    
                 <input name='type' onChange={handleChange} type='text' placeholder="Edit type"></input>
                 <input name='duration' onChange={handleChange} type='text' placeholder="Edit duration"></input>

@@ -7,7 +7,7 @@ function ExerciseList(prop) {
     if (!prop.exercises.length) return <h1>Loading...</h1>
     return(
         <div className='exerciseList'>
-            {prop.exercises.map((exercise) => (<div>
+            {prop.exercises.map((exercise) => (<div className="imgContainer">
                 <img className="aboutImg" onClick={() => {
                     prop.setDisplayModal(true)
                     prop.setExercise(exercise)

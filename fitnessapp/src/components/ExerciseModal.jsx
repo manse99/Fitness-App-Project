@@ -1,13 +1,18 @@
 function ExerciseModal(prop) {
     return(
         <div className={prop.displayModal? "exerciseModal" : 'hideElement'}>
-            <div className="closeExerciseModal" onClick={() => prop.setDisplayModal(false)}>X</div>
-            <div>{prop.exercise.name}</div>
+            <div className="closeBtnContainer">
+                <div className="modalTitle">{prop.exercise.name} || {prop.exercise.upperBody? "Upper" : 'Lower'}</div>
+                <svg className="closeExerciseModal" onClick={() => prop.setDisplayModal(false)}>
+                <line x1='0' y1='12' x2='25' y2='12' stroke='rgb(100, 70, 0)' stroke-width='3' />
+                </svg>
+            </div>
 
-            <iframe width="300" height="215"
+            <div className="videoContainer">
+            <iframe className="exerciseVid"
                 src={prop.exercise.link}>
             </iframe>   
-            <div>Upper/Lower: {prop.exercise.upperBody? "upper" : 'lower'}</div>
+            </div>
         </div>
     )
 }
