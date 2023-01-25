@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import {createExerciseRec, getExercisesRecs, deleteProductRec, updateExerciseRec } from "../services/records.js"
+import {createExerciseRec, getExercisesRecs, deleteExerciseRec, updateExerciseRec } from "../services/records.js"
 import {useNavigate} from "react-router-dom";
 import EditModal from "../components/EditModal.jsx";
 
@@ -29,7 +29,7 @@ export default function CreateExerciseRec() {
   }
 
   async function handleDelete(exerciseRec) {
-    await deleteProductRec(exerciseRec._id)
+    await deleteExerciseRec(exerciseRec._id)
     setRefreshPage(prev => (prev + 1))
   }
 
