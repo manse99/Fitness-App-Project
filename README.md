@@ -43,7 +43,12 @@ Project Overiview- https://docs.google.com/document/d/1kmjBF7HNCl62LEr9aCRfuobMV
 <br></br>
 ## Screenshots
 ---
+Collection Exercises 
+![Exercises](https://i.imgur.com/KRIp0hc.png)
+<br></br>
 
+Collection Exercise Records
+![Exercise records](https://i.imgur.com/HghZIre.png)
 
 <br></br>
 ## Post MVP
