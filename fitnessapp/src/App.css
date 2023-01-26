@@ -16,9 +16,6 @@
   background-color: orange;
   border: 3px rgb(140, 91, 0) solid;
 }
-.first {
-  margin: 0;
-}
 
 .link {
   font-size: 20px;
@@ -27,6 +24,7 @@
   margin-left: 0px;
   margin-right: 0px;
   text-align: center;
+  font-weight: 800;
 }
 .link:hover {
   background-color: rgb(255, 215, 82);
@@ -65,8 +63,9 @@
 
 .picture {
   height: 40vh;
-  border-radius: 60%;
+  border-radius: 30px;
   border: 5px solid;
+  margin-top: 100px
 }
 
 .aboutImg {
@@ -88,7 +87,7 @@
   width: 80vw;
   margin: 0 auto
 }
-.closeExerciseModal, .closeEditModal {
+.closeExerciseModal {
   color: rgb(255, 255, 255);
   cursor: pointer;
   position: relative;
@@ -96,28 +95,51 @@
   height: 25px;
   width: 25px;
 }
+.closeEditModal {
+  position: absolute;
+  right: 10px
+}
 
 .exerciseRecs {
-  background-color: rgb(222, 255, 179);
-  border: 3px solid green;
-  margin: 50px
+  margin: 50px 0 0 0;
+  text-align: center;
+}
+.buttons {
+  font-weight: 700;
+  width: 100px;
+  height: 35px;
+  display:inline;
+  margin: 30px 10px 0 10px;
+  background-color: #ffa710;
+  color: #000000;
+  border: 2px solid black;
+  border-radius: 15px;
+  box-shadow: 0px 1px 1px 0.1px rgb(165, 102, 0);
+  transition: background-color 1s, box-shadow 0.5s;
+}
+.buttons:hover {
+  box-shadow: 0px 1px 3px 0.1px;
+  background-color: #ffc663;
+  cursor:crosshair;
+  scale: 1.03;
 }
 
 .editModal {
-  background-color: rgba(0, 202, 84, 0.95);
-  width: 80vw;
-  height: 50vw;
+  background-color: rgba(242, 212, 44, 0.932);
+  width: 70vw;
+  height: 500px;
   z-index: 999;
   position: absolute;
-  left: 10vw;
+  left: 15vw;
   border: 5px rgba(0, 0, 0, 0.388) solid;
   box-shadow: 7px 7px 2px 0.5px;
+  top: 100px
 }
 .title {
   text-align: center;
   font-size: 30px;
   margin: 0 auto;
-  color: #694200;
+  color: #030200;
   font-weight: 700;
 }
 
@@ -168,3 +190,114 @@
   }
 }
 
+ .addExercisePage {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-image: linear-gradient(yellow, orange, red);
+  background-size:cover;
+  position: absolute;
+} 
+
+
+.createTitle {
+  text-align: center;
+  margin-top: 0;
+  padding: 35px 0 10px 0;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+
+.exerciseTable, th, td {
+  border: 2px solid rgb(84, 63, 0);
+  text-align: center;
+  border-collapse: collapse;
+  margin: 0 auto;
+  background-color: rgb(247, 255, 216);
+}
+.exerciseTable {
+  box-shadow: 0 2px 5px 1px;
+}
+
+.keys {
+  text-align: center;
+}
+
+.values {
+  text-align: center;
+  padding: 10px 100px;
+  min-width: 100px;
+  height: 30px;
+}
+
+.exerciseRecList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  z-index: 1;
+}
+
+.createInput {
+  width: 300px;
+  height: 25px;
+  margin: 5px 0;
+  box-shadow: 0px 0px 2px 1px rgb(113, 87, 0);
+}
+.editInput {
+  width: 300px;
+  height: 25px;
+  margin: 5px 0;
+  box-shadow: 0px 0px 2px 1px rgb(0, 113, 6);
+}
+
+.upperLower {
+  display: inline;
+  font-weight: 500;
+}
+
+.photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+
+}
+
+.contributions {
+  display: flex;
+  justify-content: space-around;
+}
+.dev {
+  margin: 100px auto 20px;
+  font-weight: 900;
+  background-color: rgb(255, 215, 156);
+  width: 200px;
+  animation: devAnimation 2s infinite;
+  color: orange;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.photo:hover {
+  scale: ;
+}
+
+@keyframes devAnimation {
+  0% {
+    color: orange;
+  }
+  25% {
+    color: red
+  }
+  50% {
+    color: green;
+  }
+  100% {
+    color: orange;
+  }
+}
