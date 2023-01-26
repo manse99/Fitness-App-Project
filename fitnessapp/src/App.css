@@ -98,9 +98,14 @@
 }
 
 .exerciseRecs {
-  background-color: rgb(222, 255, 179);
-  border: 3px solid green;
-  margin: 50px
+  margin: 50px 0 0 0;
+  text-align: center;
+}
+.buttons {
+  width: 100px;
+  height: 35px;
+  display:inline;
+  margin: 30 0 0 0;
 }
 
 .editModal {
@@ -168,3 +173,41 @@
   }
 }
 
+.addExercisePage {
+  min-height: 100vh;
+  background-image: linear-gradient(yellow, rgb(255, 208, 0), rgb(255, 102, 0));
+}
+
+.createTitle {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.exerciseTable, th, td {
+  border: 2px solid black;
+  text-align: center;
+  border-collapse: collapse;
+  margin: 0 auto;
+  background-color: rgb(247, 255, 216);
+}
+.exerciseTable {
+  
+}
+
+.keys {
+  text-align: left;
+}
+
+.values {
+  text-align: center;
+  padding: 10px 100px;
+  min-width: 100px;
+  height: 30px;
+}

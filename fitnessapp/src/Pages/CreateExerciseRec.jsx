@@ -68,27 +68,27 @@ export default function CreateExerciseRec() {
 
 
   return (
-    <div>
+    <div className="addExercisePage">
       <EditModal setRefreshPage={setRefreshPage} recId={recId} displayEditModal={displayEditModal} setDisplayEditModal={setDisplayEditModal} />
-      <h1>Add Exercise</h1>
-      <form onSubmit={handleSubmit}>
+      <h1 className="createTitle">Add Exercise</h1>
+      <form className="form" onSubmit={handleSubmit}>
         <input
           type="text"
-          placeholder="Choose Exercise"
+          placeholder="Exercise"
           name="type"
           value={form.type}
           onChange={handleChange}
         />
         <input
           type="number"
-          placeholder="Enter the Exercise Duration"
+          placeholder="Duration"
           name="duration"
           value={form.duration}
           onChange={handleChange}
         />
         <input
           type="number"
-          placeholder="Enter a number 1 - 10"
+          placeholder="Intensity: 1-10"
           name="intensity"
           value={form.intensity}
           onChange={handleChange}
@@ -114,14 +114,14 @@ export default function CreateExerciseRec() {
         </div>
         <input
           type="number"
-          placeholder="Enter the number of Sets"
+          placeholder="Sets"
           name="sets"
           value={form.sets}
           onChange={handleChange}
           />
         <input
           type="number"
-          placeholder="Enter Weight"
+          placeholder="Weight"
           name="weight"
           value={form.weight}
           onChange={handleChange}
@@ -131,14 +131,36 @@ export default function CreateExerciseRec() {
       <div className="exerciseRecList">
         {exerciseRecs.map(exerciseRec => (
         <div className="exerciseRecs">
-          <p>type: {exerciseRec.type}</p>
-          <p>duration: {exerciseRec.duration}</p>
-          <p>intensity: {exerciseRec.intensity}</p>
-          <p>upper/lower: {exerciseRec.upperBody? 'upper' : 'lower'}</p>
-          <p>weight: {exerciseRec.weight}</p>
-          <p>sets: {exerciseRec.sets}</p>
-          <button onClick={() => handleDelete(exerciseRec)}>delete</button>
-          <button onClick={() => handleEdit(exerciseRec)}>edit</button>
+          <table className="exerciseTable">
+            <tbody>
+              <tr>
+                <th className="keys">TYPE</th>
+                <td className="values">{exerciseRec.type}</td>
+              </tr>
+              <tr>
+                <th className="keys">DURATION</th>
+                <td className="values">{exerciseRec.duration}</td>
+              </tr>
+              <tr>
+                <th className="keys">INTENSITY</th>
+                <td className="values">{exerciseRec.intensity}</td>
+              </tr>
+              <tr>
+                <th className="keys">UPPER/LOWER</th>
+                <td className="values">{exerciseRec.upperBody}</td>
+              </tr>
+              <tr>
+                <th className="keys">WEIGHT</th>
+                <td className="values">{exerciseRec.weight}</td>
+              </tr>
+              <tr>
+                <th className="keys">SETS</th>
+                <td className="values">{exerciseRec.sets}</td>
+              </tr>
+            </tbody>
+          </table>
+          <button className="buttons" onClick={() => handleDelete(exerciseRec)}>Delete</button>
+          <button className="buttons" onClick={() => handleEdit(exerciseRec)}>Edit</button>
         </div>))}
       </div>
     </div>
