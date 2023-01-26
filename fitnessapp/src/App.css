@@ -16,9 +16,6 @@
   background-color: orange;
   border: 3px rgb(140, 91, 0) solid;
 }
-.first {
-  margin: 0;
-}
 
 .link {
   font-size: 20px;
@@ -66,8 +63,9 @@
 
 .picture {
   height: 40vh;
-  border-radius: 60%;
+  border-radius: 30px;
   border: 5px solid;
+  margin-top: 100px
 }
 
 .aboutImg {
@@ -89,13 +87,17 @@
   width: 80vw;
   margin: 0 auto
 }
-.closeExerciseModal, .closeEditModal {
+.closeExerciseModal {
   color: rgb(255, 255, 255);
   cursor: pointer;
   position: relative;
   margin-right: 10px;
   height: 25px;
   width: 25px;
+}
+.closeEditModal {
+  position: absolute;
+  right: 10px
 }
 
 .exerciseRecs {
@@ -123,14 +125,15 @@
 }
 
 .editModal {
-  background-color: rgba(0, 202, 84, 0.95);
-  width: 80vw;
-  height: 50vw;
+  background-color: rgba(242, 212, 44, 0.932);
+  width: 70vw;
+  height: 500px;
   z-index: 999;
   position: absolute;
-  left: 10vw;
+  left: 15vw;
   border: 5px rgba(0, 0, 0, 0.388) solid;
   box-shadow: 7px 7px 2px 0.5px;
+  top: 100px
 }
 .title {
   text-align: center;
@@ -187,25 +190,14 @@
   }
 }
 
-.newBackground {
-  min-height: 1000%;
-  background-image: linear-gradient(yellow, rgb(218, 187, 31), rgb(0, 243, 93) );
-  width: 1200%;
-  z-index: -999;
+ .addExercisePage {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-image: linear-gradient(yellow, orange, red);
+  background-size:cover;
   position: absolute;
-  top: -7500px;
-  left: -7500px;
-  overflow-x:hidden;
-  animation: backgroundAnimation 5s infinite;
-}
-@keyframes backgroundAnimation {
-  0% {
-    rotate: 0deg;
-  }
-  100% {
-    rotate: 360deg;
-  }
-}
+} 
+
 
 .createTitle {
   text-align: center;
@@ -218,6 +210,7 @@
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+  margin-top: 50px;
 }
 
 
@@ -257,7 +250,54 @@
   margin: 5px 0;
   box-shadow: 0px 0px 2px 1px rgb(113, 87, 0);
 }
+.editInput {
+  width: 300px;
+  height: 25px;
+  margin: 5px 0;
+  box-shadow: 0px 0px 2px 1px rgb(0, 113, 6);
+}
+
 .upperLower {
   display: inline;
   font-weight: 500;
+}
+
+.photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+
+}
+
+.contributions {
+  display: flex;
+  justify-content: space-around;
+}
+.dev {
+  margin: 100px auto 20px;
+  font-weight: 900;
+  background-color: rgb(255, 215, 156);
+  width: 200px;
+  animation: devAnimation 2s infinite;
+  color: orange;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.photo:hover {
+  scale: ;
+}
+
+@keyframes devAnimation {
+  0% {
+    color: orange;
+  }
+  25% {
+    color: red
+  }
+  50% {
+    color: green;
+  }
+  100% {
+    color: orange;
+  }
 }
