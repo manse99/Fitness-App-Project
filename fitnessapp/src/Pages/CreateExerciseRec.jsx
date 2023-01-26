@@ -70,6 +70,7 @@ export default function CreateExerciseRec() {
   return (
     <div className="addExercisePage">
       <div className="newBackground"></div>
+      <div className="newBackground2"></div>
       <EditModal setRefreshPage={setRefreshPage} recId={recId} displayEditModal={displayEditModal} setDisplayEditModal={setDisplayEditModal} />
       <h1 className="createTitle">Add Exercise</h1>
       <form className="form" onSubmit={handleSubmit}>
@@ -135,7 +136,7 @@ export default function CreateExerciseRec() {
         </div>
         <button className="buttons" type="submit">Add</button>
       </form>
-
+      
       <div className="exerciseRecList">
         {exerciseRecs.map(exerciseRec => (
         <div className="exerciseRecs">

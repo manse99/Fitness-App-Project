@@ -187,25 +187,14 @@
   }
 }
 
-.newBackground {
-  min-height: 1000%;
-  background-image: linear-gradient(yellow, rgb(218, 187, 31), rgb(0, 243, 93) );
-  width: 1200%;
-  z-index: -999;
+ .addExercisePage {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-image: linear-gradient(yellow, orange, red);
+  background-size:cover;
   position: absolute;
-  top: -7500px;
-  left: -7500px;
-  overflow-x:hidden;
-  animation: backgroundAnimation 5s infinite;
-}
-@keyframes backgroundAnimation {
-  0% {
-    rotate: 0deg;
-  }
-  100% {
-    rotate: 360deg;
-  }
-}
+} 
+
 
 .createTitle {
   text-align: center;
@@ -261,3 +250,4 @@
   display: inline;
   font-weight: 500;
 }
+
