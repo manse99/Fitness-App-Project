@@ -69,6 +69,7 @@ export default function CreateExerciseRec() {
 
   return (
     <div className="addExercisePage">
+      <div className="newBackground"></div>
       <EditModal setRefreshPage={setRefreshPage} recId={recId} displayEditModal={displayEditModal} setDisplayEditModal={setDisplayEditModal} />
       <h1 className="createTitle">Add Exercise</h1>
       <form className="form" onSubmit={handleSubmit}>
@@ -78,6 +79,7 @@ export default function CreateExerciseRec() {
           name="type"
           value={form.type}
           onChange={handleChange}
+          className='createInput'
         />
         <input
           type="number"
@@ -85,6 +87,7 @@ export default function CreateExerciseRec() {
           name="duration"
           value={form.duration}
           onChange={handleChange}
+          className='createInput'
         />
         <input
           type="number"
@@ -92,9 +95,27 @@ export default function CreateExerciseRec() {
           name="intensity"
           value={form.intensity}
           onChange={handleChange}
+          className='createInput'
           />
+
+        <input
+          type="number"
+          placeholder="Sets"
+          name="sets"
+          value={form.sets}
+          onChange={handleChange}
+          className='createInput'
+          />
+        <input
+          type="number"
+          placeholder="Weight"
+          name="weight"
+          value={form.weight}
+          onChange={handleChange}
+          className='createInput'
+        />
         <div>
-          <h3>Upper Body</h3>
+        <p className="upperLower">Upper Body</p>
         <input
           id="upperBody-true"
           type="radio"
@@ -112,22 +133,9 @@ export default function CreateExerciseRec() {
           />
         <label htmlFor="upperBody-false">False</label>
         </div>
-        <input
-          type="number"
-          placeholder="Sets"
-          name="sets"
-          value={form.sets}
-          onChange={handleChange}
-          />
-        <input
-          type="number"
-          placeholder="Weight"
-          name="weight"
-          value={form.weight}
-          onChange={handleChange}
-        />
-        <button type="submit">Add</button>
+        <button className="buttons" type="submit">Add</button>
       </form>
+
       <div className="exerciseRecList">
         {exerciseRecs.map(exerciseRec => (
         <div className="exerciseRecs">
