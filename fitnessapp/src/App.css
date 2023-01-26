@@ -190,8 +190,10 @@
   align-items: center;
 }
 
+.input {}
+
 .exerciseTable, th, td {
-  border: 2px solid black;
+  border: 2px solid rgb(84, 63, 0);
   text-align: center;
   border-collapse: collapse;
   margin: 0 auto;
@@ -202,7 +204,7 @@
 }
 
 .keys {
-  text-align: left;
+  text-align: center;
 }
 
 .values {
@@ -210,4 +212,11 @@
   padding: 10px 100px;
   min-width: 100px;
   height: 30px;
+}
+
+.exerciseRecList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 30px;
 }
