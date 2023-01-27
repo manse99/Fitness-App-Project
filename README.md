@@ -10,7 +10,7 @@ Project Overiview- https://docs.google.com/document/d/1kmjBF7HNCl62LEr9aCRfuobMV
 <br></br>
 ## Deployed Links
 ---
-* Heroku- (Back End Deployment)
+* Heroku - (Back End Deployment)
 1. Access to root API- https://fitness-app-1114.herokuapp.com/
 2. Access to a list of exercises- https://fitness-app-1114.herokuapp.com/exercises
 3. Access to a single exercise- https://fitness-app-1114.herokuapp.com/exercises/:id
@@ -18,11 +18,12 @@ Project Overiview- https://docs.google.com/document/d/1kmjBF7HNCl62LEr9aCRfuobMV
 5. Access to a single workout record- https://fitness-app-1114.herokuapp.com/exerciserecs/:id
 
 
-* Netlify- (Front End Deployment)
-https://63d1690835b037073d872e7f--remarkable-pothos-09e89f.netlify.app/
+* Netlify - (Front End Deployment)
+https://reposfit.netlify.app/
 
+* Frontend Repo - https://github.com/Kan5661/unit-3
 
-* Backend Repo- https://github.com/individual-ism/fitness_backend
+* Backend Repo - https://github.com/individual-ism/ReposFit_Backend
 
 </br></br>
 ## Technologies Used
