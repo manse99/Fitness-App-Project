@@ -1,4 +1,4 @@
-# Full Stack Mern Application
+# Full Stack Mern Application- ReposFit
 
 In this group project we have built a workout applictation using full stack mongo/express/react/node application (MERN Stack)
 
@@ -6,6 +6,8 @@ In this group project we have built a workout applictation using full stack mong
 ## Documentation and Expectations
 ---
 Project Overiview- https://docs.google.com/document/d/1kmjBF7HNCl62LEr9aCRfuobMV9ImzQSEMi0kjWIF3JM/edit
+
+* This workout application provides users the ability to track, edit, view, and delete workouts. The home page gives user an overview of how the application functions, the about page has 12 familiar workouts with attached that show's proper form. Lastly, the add exercise page has a form where users can add workouts, then edit, and delete the workouts they have created. 
 
 <br></br>
 ## Deployed Links
@@ -53,6 +55,14 @@ Collection Exercises
 Collection Exercise Records
 ![Exercise records](https://i.imgur.com/HghZIre.png)
 
+Home Page
+![Home Page](https://i.imgur.com/VR8bsKA.png)
+
+About Page
+![About](https://i.imgur.com/IU0T1Hg.png)
+
+Add Exercise Page
+![Form](https://i.imgur.com/WQ5gloR.png)
 <br></br>
 ## Post MVP
 ---
