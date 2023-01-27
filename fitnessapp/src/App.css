@@ -34,6 +34,10 @@
 .link:active {
   color: rgb(197, 0, 197)
 }
+.nutriLog {
+  text-decoration: none;
+}
+
 .about {
   background-color: #ffbe4d;
   height: 100vh;
