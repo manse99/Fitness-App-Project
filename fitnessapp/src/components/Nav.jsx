@@ -10,7 +10,7 @@ function Nav() {
         <Link to='./Pages/about' className='link'>
             About
         </Link>
-        <a className='link' href='' target='_blank'>
+        <a className='link' href='https://nutrilogx.netlify.app/' target='_blank'>
             <div>NutrilLog</div>
         </a>
         <p className='title'>ReposFit</p>
