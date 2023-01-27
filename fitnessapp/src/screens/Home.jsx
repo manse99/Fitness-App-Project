@@ -4,7 +4,7 @@ import React from 'react'
 export default function Home() {
   return (
     <div className='home'>
-        <p className='aboutInfo'>This workout application allows users to view workout's under the about section. The about section contains links to video's to show proper form for each workout. The add exercise page allows a user to add, delete, edit, and view workouts they have completed.</p>
+        <p className='aboutInfo'>This workout application allows users to view workout's under the about section. The about section contains links to video's to show proper form for each workout. The NutriLog section will route you to a separate application-NutriLog. The add exercise page allows a user to add, delete, edit, and view workouts they have completed.</p>
         <img className='picture' src='https://i.imgur.com/pl7bYum.jpg' alt="" />
         <h1>Choose About to Learn different Workout's</h1>
         <h2 className='dev'>Developers</h2>

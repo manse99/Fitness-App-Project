@@ -7,7 +7,7 @@ In this group project we have built a workout applictation using full stack mong
 ---
 Project Overiview- https://docs.google.com/document/d/1kmjBF7HNCl62LEr9aCRfuobMV9ImzQSEMi0kjWIF3JM/edit
 
-* This workout application provides users the ability to track, edit, view, and delete workouts. The home page gives user an overview of how the application functions, the about page has 12 familiar workouts with attached that show's proper form. Lastly, the add exercise page has a form where users can add workouts, then edit, and delete the workouts they have created. 
+* This workout application provides users the ability to track, edit, view, and delete workouts. The home page gives user an overview of how the application functions, the about page has 12 familiar workouts with attached that show's proper form, and the nutrition link sends users to another application where users can track their calories. Lastly, the add exercise page has a form where users can add workouts, then edit, and delete the workouts they have created. 
 
 <br></br>
 ## Deployed Links
