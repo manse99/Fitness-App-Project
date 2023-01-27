@@ -10,7 +10,7 @@
 }
 .nav {
   display: grid;
-  grid-template-columns: 85px 85px 1fr 250px;
+  grid-template-columns: 85px 85px 125px 1fr 250px;
   height: 50px;
   align-items: center;
   background-color: orange;
@@ -25,6 +25,7 @@
   margin-right: 0px;
   text-align: center;
   font-weight: 800;
+  color: purple;
 }
 .link:hover {
   background-color: rgb(255, 215, 82);
