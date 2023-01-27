@@ -21,6 +21,9 @@ export default function Home() {
           <a href='https://github.com/individual-ism' target='_blank'>
           <img className='photo' src='https://i.imgur.com/LCDtZKM.jpg'/>
           </a>
+          <a href='https://github.com/manse99' target='_blank'>
+          <img className='photo' src='https://i.imgur.com/QBiVmW7_d.jpg?maxwidth=520&shape=thumb&fidelity=high'/>
+          </a>
         </div>
     </div>
 
