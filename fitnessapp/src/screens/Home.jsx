@@ -21,8 +21,13 @@ export default function Home() {
           <a href='https://github.com/individual-ism' target='_blank'>
           <img className='photo' src='https://i.imgur.com/LCDtZKM.jpg'/>
           </a>
+<<<<<<< HEAD
           <a href='' target='_blank'>
           <img className='photo' src=''/>
+=======
+          <a href='https://github.com/manse99' target='_blank'>
+          <img className='photo' src='https://i.imgur.com/QBiVmW7_d.jpg?maxwidth=520&shape=thumb&fidelity=high'/>
+>>>>>>> 1cba2fd8b504caf571489b30d2b53e3bdcf24472
           </a>
         </div>
     </div>
