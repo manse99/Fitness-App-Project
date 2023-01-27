@@ -154,7 +154,7 @@ export default function CreateExerciseRec() {
               </tr>
               <tr>
                 <th className="keys">UPPER/LOWER</th>
-                <td className="values">{exerciseRec.upperBody}</td>
+                <td className="values">{exerciseRec.upperBody? 'Upper' : 'Lower'}</td>
               </tr>
               <tr>
                 <th className="keys">WEIGHT</th>
